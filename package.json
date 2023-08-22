@@ -1,0 +1,36 @@
+{
+  "name": "typescript-scaffolding",
+  "version": "0.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "compile": "shx rm -rf lib && tsc",
+    "prepublish": "npm run compile",
+    "start": "node lib/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "keywords": [],
+  "author": {
+    "url": "https://github.com/ShinChven",
+    "name": "ShinChven ZHANG",
+    "email": "shinchven@gmail.com"
+  },
+  "repository": {
+    "url": "https://github.com/ShinChven/typescript-scaffolding.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@types/koa": "^2.13.8",
+    "@types/koa-router": "^7.4.4",
+    "koa": "^2.14.2",
+    "koa-router": "^12.0.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18.15.11",
+    "mocha": "^10.2.0",
+    "shx": "^0.3.4",
+    "ts-mocha": "^10.0.0",
+    "typescript": "^5.0.4"
+  }
+}
